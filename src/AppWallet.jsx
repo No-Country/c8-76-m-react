@@ -1,9 +1,15 @@
 import React from 'react'
+import Home from './components/Home'
+import NavHeader from './components/NavHeader'
 
 export const AppWallet = () => {
   return (
-    <div>
-        <h1>AppWallet Principal</h1>    
-    </div>
-  )
-}
+    <>
+      <NavHeader />
+      <div>
+        <p>AppWallet Principal</p>
+      </div>
+      <Home />
+    </>
+  );
+};
