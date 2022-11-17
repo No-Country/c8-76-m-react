@@ -1,15 +1,6 @@
-import React from 'react'
-import Home from './components/Home'
-import NavHeader from './components/NavHeader'
+import React from "react";
+import { AppRouter } from "./routes/AppRouter";
 
 export const AppWallet = () => {
-  return (
-    <>
-      <NavHeader />
-      <div>
-        <p>AppWallet Principal</p>
-      </div>
-      <Home />
-    </>
-  );
+  return <AppRouter />;
 };
