@@ -10,5 +10,6 @@ export const AppWallet = () => {
   )
 }
 
-
+  return <AppRouter />;
+};
 
