@@ -1,6 +1,6 @@
 import React from 'react'
 import Home from './components/Home'
-import NavHeader from './components/NavHeader'
+import NavHeader from './components/landing/NavHeader'
 
 export const AppWallet = () => {
   return (
@@ -13,3 +13,4 @@ export const AppWallet = () => {
     </>
   );
 };
+
