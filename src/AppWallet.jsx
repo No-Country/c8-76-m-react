@@ -1,15 +1,22 @@
-import React from "react";
+
+import React from 'react'
+import Home from './components/Home'
+import NavHeader from './components/landing/NavHeader'
 import { AppRouter } from "./routes/AppRouter";
+
 
 export const AppWallet = () => {
 
   return (
-    <div>
-        <h1>Hola soy Melany</h1>    
-    </div>
-  )
-}
 
-
+    <>
+      <NavHeader />
+      <div>
+        <p>AppWallet Principal</p>
+      </div>
+      <Home />
+    </>
+  );
+};
 
 
