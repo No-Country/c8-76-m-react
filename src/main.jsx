@@ -4,8 +4,10 @@ import { AppWallet } from './AppWallet'
 
 
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <AppWallet/>
+
   </React.StrictMode>
 )

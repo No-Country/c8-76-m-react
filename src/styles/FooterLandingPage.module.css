@@ -1,0 +1,37 @@
+.a{
+    border: solid red 2px;
+}
+
+.b{
+    border: solid red 2px;
+    width: 20%;
+
+}
+.general{
+    color: white;
+    background: #1A1D58;
+    width: 100%;
+
+}
+
+.containerLogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    height: 100px;
+}
+.containerLogo img{
+    width: 240px;
+    margin-left: 25px;
+
+}
+.containerHorizontal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.containerHorizontal div{
+
+    width: 20%;
+}
