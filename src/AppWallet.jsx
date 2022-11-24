@@ -6,9 +6,7 @@ export const AppWallet = () => {
   return (
     <>
       <NavHeader />
-      <div>
-        <p>AppWallet Principal</p>
-      </div>
+     
       <Home />
     </>
   );
