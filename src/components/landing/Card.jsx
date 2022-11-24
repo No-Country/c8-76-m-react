@@ -20,8 +20,7 @@ export default function Card({title, text, image}) {
   const handleClose = () => {
     setOpen(false);
   };
-
-  const pages = ['Transferencias', 'Servicios', 'Tarjetas'];
+ 
 
   return (
     <div>    

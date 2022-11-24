@@ -19,7 +19,8 @@ function NavHeader() {
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
+    setAnchorElNav(event.currentTarget)
+    console.log(anchorElNav);
   };
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
@@ -91,7 +92,7 @@ function NavHeader() {
                                      
             </Menu>
           </Box>          
-          
+          {/* ///////////////////////////////////////////////////////////// */}
           <Typography
             variant="h5"
             noWrap
