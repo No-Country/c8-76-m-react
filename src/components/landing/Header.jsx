@@ -9,7 +9,7 @@ export const Header = () => {
           <h1 className={s.text}>COUNTRY WALLET</h1>
           <p className={s.p}>
             DE AHORA EN ADELANTE, HACÉS
-            <br /> MÁS CON TU DINERO.
+            <br /> MÁS CON TU DINERO!
           </p>
           <Button variant="contained">Contained</Button> 
       </header>
