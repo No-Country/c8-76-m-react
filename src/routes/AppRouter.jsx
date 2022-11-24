@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
-import Home from "../components/Home";
+import Home from "../components/landing/Home";
 
 export const AppRouter = () => {
   return (
