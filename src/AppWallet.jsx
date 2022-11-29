@@ -1,35 +1,12 @@
+import React from 'react';
+import { AppRouter } from './routes/AppRouter';
 
-import React from 'react'
-
-import { FooterLandingPage } from './FooterLandingPage'
-
-
-import Home from './components/landing/Home'
-import NavHeader from './components/landing/NavHeader'
-import { AppRouter } from "./routes/AppRouter";
-
-
-
-export const AppWallet = () => {
-
+function AppWallet() {
   return (
-
     <div>
-        <NavHeader />
-        <Home />
-        <FooterLandingPage/>
-        
+       <AppRouter/>               
     </div>
   )
-};
+}
 
-
-   
-      
-      
-      
-   
-
-
-
-
+export default AppWallet;

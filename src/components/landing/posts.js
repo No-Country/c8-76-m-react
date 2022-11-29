@@ -5,21 +5,21 @@ const posts = [
         id: 1,
         title: "Transferencias",
         text:
-            "Near Bank é um banco digital para você e nossa missão é oferecer uma experiência bancária simples, transparente e humana para que você possa ter mais tempo e energia para fazer o que realmente importa.",
+        "App Wallet es una wallet digital para usted y nuestra misión es brindar una experiencia simple, transparente y humana para que pueda tener más tiempo y energía para hacer lo que realmente importa.",
         action: "Peça já",
     },
     {
         id: 2,
         title: "Servicios",
         text:
-            "Aqui o seu dinheiro rende mais porque oferecemos uma boa taxa de juros. E também são muito seguros, o que significa que seu dinheiro está sempre seguro e rendendo.",
+            "Pagando tus servicios con App Wallet ganas más de lo que realmente pensas, tiempo y dinero! Los servicios tiene una bonificación del 10% pagando a término.",
         action: "Peça já",
     },
     {
         id: 3,
         title: "Tarjetas",
         text:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt arcu vel arcu fermentum, eget accumsan dolor dignissim. Nam eget quam semper, varius ligula sed, auctor augue.",
+            "Si solicitas nuestras tarjetas tenes increibles promociones de la unica wallet digital que ofrece debito y credito en una sola tarjeta.",
         action: "Peça já",
     }
 ];

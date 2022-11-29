@@ -25,9 +25,9 @@ export default function Card({title, text, image}) {
   return (
     <div>    
               <Button 
-                variant="outlined" 
+                variant="text" 
                 onClick={handleClickOpen}
-                             
+                sx={{color:"#1A1D58"}}            
               > {title}
                     
               </Button>
