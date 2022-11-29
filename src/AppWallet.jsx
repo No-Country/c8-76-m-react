@@ -9,4 +9,4 @@ function AppWallet() {
   )
 }
 
-export default AppWallet;
+

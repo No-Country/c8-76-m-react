@@ -4,19 +4,15 @@ import { AppLanding } from "../AppLanding";
 import Home from "../components/app/Home";
 import MiPerfil from "../components/app/MiPerfil";
 import NavPrincipal from "../components/app/NavPrincipal";
-
+import WalletRouter from "./WalletRouter";
 
 export const AppRouter = () => {
   return (
     <>
       <BrowserRouter>
-      <NavPrincipal/>
         <Routes>
-          <Route path="/" element={<AppLanding/>} />
-          <Route path="login" element={<h1>Login</h1>} />
-          <Route path="/auth/register" element={<h1>Register</h1>} />
-          <Route path="/Home" element={<Home/>}/>
-          <Route path="/MiPerfil" element={<MiPerfil/>}/>
+          <Route path="/" element={<AppLanding />} />
+          <Route path="/Home/*" element={<WalletRouter />} />
         </Routes>
       </BrowserRouter>
     </>
