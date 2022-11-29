@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { AppRouter } from './routes/AppRouter';
+import { AppLanding } from "./AppLanding";
+import { AppRouter } from "./routes/AppRouter";
+//import AppWallet  from "./AppWallet";
 
-
-
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-  <AppRouter/> 
+    <AppRouter />
   </React.StrictMode>
 );
