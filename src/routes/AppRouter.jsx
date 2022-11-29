@@ -1,18 +1,19 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home } from "../components/landing/Home";
-import NavHeader from "../components/landing/NavHeader";
-import { HomeWallet } from "../components/wallet/HomeWallet";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
+import { AppLanding } from "../AppLanding";
+import Home from "../components/app/Home";
+import MiPerfil from "../components/app/MiPerfil";
+import NavPrincipal from "../components/app/NavPrincipal";
+
 
 export const AppRouter = () => {
   return (
     <>
       <BrowserRouter>
-        <NavHeader />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<h1>Home</h1>} />
           <Route path="login" element={<h1>Login</h1>} />
-          <Route path="user" element={<HomeWallet />} />
+          <Route path="/auth/register" element={<h1>Register</h1>} />
         </Routes>
       </BrowserRouter>
     </>

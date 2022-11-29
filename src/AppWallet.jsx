@@ -1,15 +1,12 @@
-import React from "react";
-import { Home } from "./components/landing/Home";
-import NavHeader from "./components/landing/NavHeader";
+import React from 'react';
+import { AppRouter } from './routes/AppRouter';
 
-export const AppWallet = () => {
+function AppWallet() {
   return (
-    <>
-      <NavHeader />
-      <div>
-        <p>AppWallet Principal</p>
-      </div>
-      <Home />
-    </>
-  );
-};
+    <div>
+       <AppRouter/>               
+    </div>
+  )
+}
+
+
