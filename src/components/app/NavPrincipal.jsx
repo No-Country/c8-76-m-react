@@ -32,14 +32,14 @@ export default function NavPrincipal() {
             </IconButton>
           </Tooltip>
           <Tooltip title="Servicios">
-            <IconButton href="/Servicios">
+            <IconButton>
             <Link to="/Servicios">
               <PaymentsIcon sx={{ fontSize: 40, color: "#1A1D58" }} />
             </Link>
             </IconButton>
           </Tooltip>
           <Tooltip title="Perfil">
-            <IconButton href="/MiPerfil">
+            <IconButton>
             <Link to="/MiPerfil">
               <PersonIcon sx={{ fontSize: 40, color: "#1A1D58" }} />
             </Link>
