@@ -19,7 +19,8 @@ function NavHeader() {
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
+    setAnchorElNav(event.currentTarget)
+    console.log(anchorElNav);
   };
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
@@ -49,7 +50,7 @@ function NavHeader() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.2rem',
-              color: 'inherit',
+              color:"#1A1D58",
               textDecoration: 'none',
             }}
           >
@@ -91,7 +92,7 @@ function NavHeader() {
                                      
             </Menu>
           </Box>          
-          
+          {/* ///////////////////////////////////////////////////////////// */}
           <Typography
             variant="h5"
             noWrap
@@ -110,24 +111,17 @@ function NavHeader() {
           >
             COUNTRY 
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-         {/*  {pages.map((page) => (
-              <Card
-                key={page} {...page}              
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >                
-              </Card>
-            ))} */}
-            {posts.map((post,i)=>(
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }}}>
+             {posts.map((post,i)=>(
               <Card key= {post.id}{...post}/>
             ))}
           
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
+            <Tooltip title="Country Wallet">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Country Wallet" src="../../assets/logo.png" />
+                <Avatar alt="Country Wallet" src="../src/assets/logo.png" sx={{ width: 54, height: 54 }}/>
               </IconButton>
             </Tooltip>
             <Menu

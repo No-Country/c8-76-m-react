@@ -1,5 +1,5 @@
 import React from "react";
-import s from "./Header.module.css";
+import s from "../../styles/Header.module.css";
 import { Button } from '@mui/material';
 
 export const Header = () => {
@@ -16,3 +16,4 @@ export const Header = () => {
     </div>
   );
 };
+ export default Header;

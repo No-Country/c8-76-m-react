@@ -1,6 +1,6 @@
 import React from 'react'
-import style from './styles/FooterLandingPage.module.css'
-import logo from "./assets/logoappwallet.svg"
+import style from '../../styles/FooterLandingPage.module.css'
+import logo from "../../assets/logoappwallet.svg"
 
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
@@ -94,4 +94,7 @@ export const FooterLandingPage = () => {
     
     </div>
   )
-}
+};
+
+export default FooterLandingPage;
+

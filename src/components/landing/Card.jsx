@@ -20,15 +20,14 @@ export default function Card({title, text, image}) {
   const handleClose = () => {
     setOpen(false);
   };
-
-  const pages = ['Transferencias', 'Servicios', 'Tarjetas'];
+ 
 
   return (
     <div>    
               <Button 
-                variant="outlined" 
+                variant="text" 
                 onClick={handleClickOpen}
-                             
+                sx={{color:"#1A1D58"}}            
               > {title}
                     
               </Button>

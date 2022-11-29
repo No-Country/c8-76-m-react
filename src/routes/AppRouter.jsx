@@ -1,15 +1,22 @@
 import React from "react";
 import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
-import Home from "../components/landing/Home";
+import { AppLanding } from "../AppLanding";
+import Home from "../components/app/Home";
+import MiPerfil from "../components/app/MiPerfil";
+import NavPrincipal from "../components/app/NavPrincipal";
+
 
 export const AppRouter = () => {
   return (
     <>
       <BrowserRouter>
+      <NavPrincipal/>
         <Routes>
-          <Route path="/" element={<Home/>} />
+          <Route path="/" element={<AppLanding/>} />
           <Route path="login" element={<h1>Login</h1>} />
           <Route path="/auth/register" element={<h1>Register</h1>} />
+          <Route path="/Home" element={<Home/>}/>
+          <Route path="/MiPerfil" element={<MiPerfil/>}/>
         </Routes>
       </BrowserRouter>
     </>
