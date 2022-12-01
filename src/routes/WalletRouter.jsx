@@ -5,10 +5,11 @@ import MiPerfil from "../components/app/MiPerfil";
 import NavPrincipal from "../components/app/NavPrincipal";
 import Servicios from "../components/app/Servicios";
 import Transferencias from "../components/app/Transferencias";
+import s from "../styles/WalletRouter.module.css"
 
 const WalletRouter = () => {
   return (
-    <>
+    <div className={s.container}>
       <NavPrincipal />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -16,7 +17,7 @@ const WalletRouter = () => {
         <Route path="/Transferencias" element={<Transferencias />} />
         <Route path="/Servicios" element={<Servicios />} />
       </Routes>
-    </>
+    </div>
   );
 };
 
