@@ -17,7 +17,7 @@ const WalletRouter = () => {
         <Route path="/Servicios" element={<Servicios />} />
       </Routes>
       <NavPrincipal />
-    </>
+    </div>
   );
 };
 
