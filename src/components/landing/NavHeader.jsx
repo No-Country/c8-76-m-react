@@ -13,7 +13,6 @@ import MenuItem from "@mui/material/MenuItem";
 import Card from "./Card";
 import posts from "./posts";
 import { useAutenticacion } from "../../hooks/useAutenticacion";
-import { useNavigate } from "react-router-dom";
 
 function NavHeader() {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -35,10 +34,6 @@ function NavHeader() {
     setAnchorElUser(null);
   };
 
-  /*  const navigate = useNavigate();
-  if (user) {
-    navigate("/user");
-  } */
   const { user, handleClick } = useAutenticacion();
 
   console.log(user);
