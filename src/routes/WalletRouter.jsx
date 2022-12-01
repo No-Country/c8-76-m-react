@@ -8,14 +8,14 @@ import Transferencias from "../components/app/Transferencias";
 
 const WalletRouter = () => {
   return (
-    <>
-      <NavPrincipal />
+    <>      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/MiPerfil" element={<MiPerfil />} />
         <Route path="/Transferencias" element={<Transferencias />} />
         <Route path="/Servicios" element={<Servicios />} />
       </Routes>
+      <NavPrincipal />
     </>
   );
 };

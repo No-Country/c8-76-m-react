@@ -8,7 +8,7 @@ import Tooltip from "@mui/material/Tooltip";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import { Link } from "react-router-dom";
-import Home from "./Home";
+
 
 export default function NavPrincipal() {
   return (
@@ -18,7 +18,7 @@ export default function NavPrincipal() {
           <Tooltip title="Home">
             <IconButton>
               <Link to="/Home">
-                <HomeIcon sx={{ fontSize: 40, color: "#1A1D58" }} />
+                <HomeIcon sx={{ fontSize: 40, color: "#1A1D58"}} />
               </Link>
             </IconButton>
           </Tooltip>
