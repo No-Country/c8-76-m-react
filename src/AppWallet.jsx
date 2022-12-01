@@ -1,12 +1,16 @@
 import React from 'react';
-import { AppRouter } from './routes/AppRouter';
+import NavPrincipal from './components/app/NavPrincipal';
+
 
 function AppWallet() {
   return (
     <div>
-       <AppRouter/>               
+    <br></br>
+      <NavPrincipal/>                     
     </div>
   )
 }
 
+
+export default AppWallet;
 

@@ -114,14 +114,7 @@ function NavHeader() {
             COUNTRY
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {/*  {pages.map((page) => (
-              <Card
-                key={page} {...page}              
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >                
-              </Card>
-            ))} */}
-            {posts.map((post, i) => (
+             {posts.map((post, i) => (
               <Card key={post.id} {...post} />
             ))}
           </Box>
