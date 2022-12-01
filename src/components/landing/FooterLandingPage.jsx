@@ -1,100 +1,82 @@
-import React from 'react'
-import style from '../../styles/FooterLandingPage.module.css'
-import logo from "../../assets/logoappwallet.svg"
-
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
-
-
+import React from "react";
+import style from "../../styles/FooterLandingPage.module.css";
+import logo from "../../assets/logo.png";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { Grid, Box } from "@mui/material";
 
 export const FooterLandingPage = () => {
   return (
-    <div className={style.general}>
-        <br />
-        <br />
+    <footer className={style.general}>
+      <Box className={style.container}>
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+          >
+            <Typography>¿Quienes Somos?</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              Somos un grupo de desarrolladores FrontEnd con mucha pasión por lo
+              que hacemos, con muchas ganas de aprender y demostrar nuestras
+              habilidades. Somos: Diego, Mariana, Melany y Jaime.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2a-content"
+            id="panel2a-header"
+          >
+            <Typography>¿Que es Country Wallet?</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              Country Wallet es una de las billeteras virtuales más fáciles de
+              utilizar, es la billetera perfecta para las personas que necesiten
+              realizar transacciones de manera rápida, inmediata, sencilla y
+              sobre todo sin coste alguno.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2a-content"
+            id="panel2a-header"
+          >
+            <Typography>¿Como obtengo Country Wallet?</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              Ingresa desde donde quieras, de cualquier dispositivo, en
+              cualquier lugar, a nuestra página de Country Wallet e ingresa con
+              tu usuario de Google para que empieces a disfrutar de los
+              beneficios de tu Country Wallet.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+      </Box>
 
-        <div className={` col-12 ${style.containerLogo} `}>
-            <div ><img src={logo} alt="" /></div>  
-        </div>    
-<br /><br />
-
-        <div className={` col-12  ${style.containerHorizontal} `}>
-          <div>
-            <h5 className='col-3'>nearBank</h5>
-            <ul>
-              <li>Sobre nosostros</li>
-
-            </ul>
-          </div>
-
-          <div>
-            <h5>Productos</h5>
-            <ul>
-              <li>Cartera digital</li>
-
-            </ul>
-          </div>
-
-          <div>
-            <h5>Exploración</h5>
-            <ul>
-              <li>Comunidad</li>
-
-            </ul>
-          </div>
-
-          <div>
-            <h5>Viaja también</h5>
-            <ul>
-              <li>Auxilio de emergencia FGTS</li>
-
-              
-            </ul>
-          </div>
-
-        </div>    
-
-
-        
-        <div className={` col-12  ${style.containerHorizontal}`}>
-        <div>
-            <h5>Transparencia</h5>
-            <ul>
-              <li>Politica de provacidad</li>
-
-            </ul>
-          </div>
-
-          <div>
-            <h5>Ouvidoria</h5>
-            <ul>
-              <li>08000 887 0463</li>
-
-            </ul>
-          </div>
-
-          <div>
-            <h5>Nuestros clientes</h5>
-            <ul>
-              <li>0800 608 6236</li>
-
-            </ul>
-          </div>
-
-          <div>
-            <h5>Nuestras Agencias</h5>
-            <ul>
-              <li>Brasil</li>
-
-              
-            </ul>
-          </div>
-        </div>  
-        <br /><br /><br /><br />
-    
-    </div>
-  )
+      <Grid container>
+        <Grid item xs={6}>
+          {/* En xs se mostraran 12 columnas */}
+          <img src={logo} alt="logo" className={style.logo} />
+        </Grid>
+        <Grid item xs={6} className={style.flex}>
+          <p className={style.textFooter}>
+            Hecho con ❤ por: Jaime, Mariana, Melany y Diego.
+          </p>
+        </Grid>
+      </Grid>
+    </footer>
+  );
 };
 
 export default FooterLandingPage;
-
