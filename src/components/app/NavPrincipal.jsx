@@ -8,7 +8,7 @@ import Tooltip from "@mui/material/Tooltip";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import { Link } from "react-router-dom";
-import Home from "./Home";
+
 
 export default function NavPrincipal() {
   return (

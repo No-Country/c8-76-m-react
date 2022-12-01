@@ -10,13 +10,13 @@ import s from "../styles/WalletRouter.module.css"
 const WalletRouter = () => {
   return (
     <div className={s.container}>
-      <NavPrincipal />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/MiPerfil" element={<MiPerfil />} />
         <Route path="/Transferencias" element={<Transferencias />} />
         <Route path="/Servicios" element={<Servicios />} />
       </Routes>
+      <NavPrincipal />
     </div>
   );
 };
