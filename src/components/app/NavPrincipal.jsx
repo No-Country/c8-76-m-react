@@ -17,8 +17,8 @@ export default function NavPrincipal() {
         <Grid item>
           <Tooltip title="Home">
             <IconButton>
-              <Link to="/Home">
-                <HomeIcon sx={{ fontSize: 40, color: "#1A1D58"}} />
+              <Link to="/Wallet">
+                <HomeIcon sx={{ fontSize: 40, color: "#1A1D58" }} />
               </Link>
             </IconButton>
           </Tooltip>
