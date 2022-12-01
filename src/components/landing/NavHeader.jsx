@@ -107,7 +107,7 @@ function NavHeader() {
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
-              color: "inherit",
+              color: "#1A1D58",
               textDecoration: "none",
             }}
           >
