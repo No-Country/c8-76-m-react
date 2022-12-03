@@ -27,5 +27,6 @@ Firabase
 
 ![Landing Page](/src/assets/landing.png)
 
+-------------------------
 
 ![Country Wallet](/src/assets/app.png)
