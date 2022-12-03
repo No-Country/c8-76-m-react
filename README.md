@@ -8,12 +8,12 @@ enterarte de todo lo que se puede hacer y sus beneficios.
 ### Tecnologías utilizadas:
 
 - UX/UI
-Material UI
+  + Material UI
 - Front-End
-React JS
-Bootstrap
+  + React JS
+  + Bootstrap
 - Back-End
-Firabase
+  + Firabase
 
 ### Roles 
 
