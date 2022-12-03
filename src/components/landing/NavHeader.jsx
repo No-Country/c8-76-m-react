@@ -124,7 +124,7 @@ function NavHeader() {
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar
                   alt="Country Wallet"
-                  src="../src/assets/logo.png"
+                  src="c8-76-react-m/src/assets/logo.png"
                   sx={{ width: 54, height: 54 }}
                 />
               </IconButton>
