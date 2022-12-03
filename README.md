@@ -5,7 +5,7 @@
 otros movimientos de tus cuentas personales.  Además de la app en sí, cuenta con una landing page para que puedas
 enterarte de todo lo que se puede hacer y sus beneficios.
 
-###Tecnologías utilizadas:
+##Tecnologías utilizadas:
 
 - UX/UI
 Material UI
@@ -15,14 +15,14 @@ Bootstrap
 - Back-End
 Firabase
 
-###Roles 
+##Roles 
 
 - Jaime Parra (Front-End)
 - Melany Ressler (Front-End)
 - Diego Rangel (Back-End)
 - Mariana Cervantes (Front-End)
 
-###Deploy
+##Deploy
 
 - [Country Wallet]()
 ![Landing Page](/src/assest/landing.png)
