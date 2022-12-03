@@ -23,8 +23,9 @@ Firabase
 - Mariana Cervantes (Front-End)
 
 ### Deploy
-
-- [Country Wallet]()
+-------------------------
 
 ![Landing Page](/src/assets/landing.png)
+
+
 ![Country Wallet](/src/assets/app.png)
