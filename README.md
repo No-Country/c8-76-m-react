@@ -25,5 +25,6 @@ Firabase
 ### Deploy
 
 - [Country Wallet]()
-![Landing Page](/src/assest/landing.png)
-![Country Wallet](/src/assest/app.png)
+
+![Landing Page](/src/assets/landing.png)
+![Country Wallet](/src/assets/app.png)
