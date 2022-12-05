@@ -24,7 +24,7 @@ enterarte de todo lo que se puede hacer y sus beneficios.
 
 ### Deploy
 
-[Country Wallet App](https://www.country-wallet.vercel.app)
+<a href="https://country-wallet.vercel.app" target="_blank">Country Wallet App</a>
 
 -------------------------
 
