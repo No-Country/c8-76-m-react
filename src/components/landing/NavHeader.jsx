@@ -35,9 +35,7 @@ function NavHeader() {
     setAnchorElUser(null);
   };
 
-  const { user, handleClick } = useAutenticacion();
-
-  console.log(user);
+  const { handleClick } = useAutenticacion();
 
   return (
     <AppBar position="static" color="default">
@@ -115,7 +113,7 @@ function NavHeader() {
             COUNTRY
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-             {posts.map((post, i) => (
+            {posts.map((post, i) => (
               <Card key={post.id} {...post} />
             ))}
           </Box>

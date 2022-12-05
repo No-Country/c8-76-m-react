@@ -37,3 +37,8 @@ const analytics = getAnalytics(app);
 export const auth = getAuth(app);
 export const db = getFirestore(app);
 const storage = getStorage(app);
+
+//Funciones de DB
+export const saveUser = async (user) => {
+  return await addDoc(collection(db, "users"), user);
+};
