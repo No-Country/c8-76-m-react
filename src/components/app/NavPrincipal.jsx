@@ -8,13 +8,15 @@ import Tooltip from "@mui/material/Tooltip";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import { Link } from "react-router-dom";
+import s from "../../styles/NavsWallet.module.css"
 
 
 export default function NavPrincipal() {
-  return (
-    <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "flex" } }}>
-      <Grid container justifyContent="center">
-        <Grid item>
+  return ( 
+  <div className={s.navbottom}>
+    <Box sx={{ flexGrow: 1}}>
+      <Grid container justifyContent="center"  rowSpacing={1} columnSpacing={{ xs: 1, md: 2 }}>
+        <Grid item xs={2.3} md={2} className={s.item}>
           <Tooltip title="Home">
             <IconButton>
               <Link to="/Wallet">
@@ -22,6 +24,8 @@ export default function NavPrincipal() {
               </Link>
             </IconButton>
           </Tooltip>
+          </Grid>
+          <Grid item xs={2.3} md={2} className={s.item}>
           <Tooltip title="Transferencias">
             <IconButton>
               <Link to="Transferencias">
@@ -31,6 +35,8 @@ export default function NavPrincipal() {
               </Link>
             </IconButton>
           </Tooltip>
+          </Grid>
+          <Grid item xs={2.3} md={2} className={s.item}>
           <Tooltip title="Servicios">
             <IconButton>
               <Link to="Servicios">
@@ -38,6 +44,8 @@ export default function NavPrincipal() {
               </Link>
             </IconButton>
           </Tooltip>
+          </Grid>
+          <Grid item xs={2.3} md={2} className={s.item}>
           <Tooltip title="Perfil">
             <IconButton>
               <Link to="MiPerfil">
@@ -45,8 +53,9 @@ export default function NavPrincipal() {
               </Link>
             </IconButton>
           </Tooltip>
+          </Grid>
         </Grid>
-      </Grid>
     </Box>
+  </div>
   );
 }

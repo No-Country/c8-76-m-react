@@ -6,7 +6,7 @@ function Home() {
     <>
     <div className={s.textCenter}>
         <section>
-           <h2>
+           <h2 className="py-5">
             Saldo: $1000
            </h2>
         </section>

@@ -4,6 +4,7 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 
+
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
@@ -14,8 +15,9 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function Servicios() {
   return (
-    <Box sx={{ flexGrow: 1}}>
-      <Grid container justifyContent="center"  rowSpacing={1} columnSpacing={{ xs: 1, md: 2 }}>
+  <div>
+    <Box sx={{ flexGrow: 1}}>   
+      <Grid container justifyContent="center"  rowSpacing={1} columnSpacing={{ xs: 1, md: 12 }}>
         <Grid item xs={2} md={3}>
           <Item>1</Item>
         </Grid>
@@ -30,5 +32,6 @@ export default function Servicios() {
         </Grid>
       </Grid>
     </Box>
+</div>
   );
 }
