@@ -12,6 +12,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import Card from "./Card";
 import posts from "./posts";
+import logo from '../../assets/logo.png';
 import { useAutenticacion } from "../../hooks/useAutenticacion";
 
 function NavHeader() {
@@ -105,7 +106,7 @@ function NavHeader() {
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
-              color: "inherit",
+              color: "#1A1D58",
               textDecoration: "none",
             }}
           >
@@ -122,7 +123,7 @@ function NavHeader() {
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar
                   alt="Country Wallet"
-                  src="../src/assets/logo.png"
+                  src={logo}
                   sx={{ width: 54, height: 54 }}
                 />
               </IconButton>
