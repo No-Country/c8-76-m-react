@@ -23,6 +23,9 @@ enterarte de todo lo que se puede hacer y sus beneficios.
 - Mariana Cervantes (Front-End)
 
 ### Deploy
+
+<a href="https://country-wallet.vercel.app" target="_blank">Country Wallet App</a>
+
 -------------------------
 
 ![Landing Page](/src/assets/landing.png)

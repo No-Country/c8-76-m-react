@@ -3,27 +3,14 @@ import {
   signInWithPopup,
   onAuthStateChanged,
 } from "firebase/auth";
-import { auth } from "../firebase/firebase";
-import { useEffect, useState } from "react";
+import { auth, validateUserExists } from "../firebase/firebase";
+import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import { saveUser } from "../helpers/DbFunctions";
+import { DataContext } from "../context/DataContext";
 
 export const useAutenticacion = () => {
-  const [user, setUser] = useState(null);
+  const { user, setUser } = useContext(DataContext);
   const navigate = useNavigate();
-
-  useEffect(() => {
-    //Ejecutar esta funcion al iniciar el componente para verificar que este autenticado:
-    onAuthStateChanged(auth, handleUserStateChanged);
-  }, []);
-
-  const handleUserStateChanged = (user) => {
-    if (user) {
-      console.log(user.displayName);
-    } else {
-      console.log("nadie esta autenticado...");
-    }
-  };
 
   const handleClick = async () => {
     const googleProvider = new GoogleAuthProvider();
@@ -32,17 +19,30 @@ export const useAutenticacion = () => {
       try {
         const res = await signInWithPopup(auth, googleProvider);
 
-        setUser(res.user);
+        setUser({
+          id: res.user.uid,
+          name: res.user.displayName,
+          saldo: 1000,
+          photo: res.user.photoURL,
+          email: res.user.email,
+          movimientos: [],
+        });
+        validateUserExists({
+          id: res.user.uid,
+          name: res.user.displayName,
+          saldo: 1000,
+          photo: res.user.photoURL,
+          email: res.user.email,
+          movimientos: [],
+        });
       } catch (error) {
         console.log(error);
       }
     };
     await signInWithGoogle(googleProvider);
 
-    /* saveUser(user.displayName); */
-
     navigate("/Wallet");
   };
 
-  return { user, handleClick };
+  return { handleClick };
 };

@@ -15,6 +15,7 @@ import posts from "./posts";
 import logo from '../../assets/logo.png';
 import { useAutenticacion } from "../../hooks/useAutenticacion";
 
+
 function NavHeader() {
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
@@ -35,9 +36,8 @@ function NavHeader() {
     setAnchorElUser(null);
   };
 
-  const { user, handleClick } = useAutenticacion();
+  const { handleClick } = useAutenticacion();  
 
-  console.log(user);
 
   return (
     <AppBar position="static" color="default">
@@ -115,7 +115,7 @@ function NavHeader() {
             COUNTRY
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-             {posts.map((post, i) => (
+            {posts.map((post, i) => (
               <Card key={post.id} {...post} />
             ))}
           </Box>
@@ -146,7 +146,6 @@ function NavHeader() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              <MenuItem onClick={handleCloseUserMenu}>Inicio</MenuItem>
               <MenuItem onClick={handleClick}>Login</MenuItem>
             </Menu>
           </Box>
