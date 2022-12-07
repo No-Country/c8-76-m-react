@@ -15,8 +15,8 @@ function MiPerfil() {
         width={400}
         height={400}
       />
-
-      <h3 className="mt-4">Mi CBU y Alias</h3>
+      <h3 className="mt-2">{user.name}</h3>
+      <h3 className="mt-2">Mi CBU y Alias</h3>
 
       <p>{user.id}</p>
     </div>

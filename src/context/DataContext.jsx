@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 
 export const DataContext = createContext();
 
-const initialState = {
+export const initialState = {
   name: "",
   saldo: "",
   email: "",
