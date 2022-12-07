@@ -15,6 +15,7 @@ import posts from "./posts";
 import logo from '../../assets/logo.png';
 import { useAutenticacion } from "../../hooks/useAutenticacion";
 
+
 function NavHeader() {
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
@@ -35,7 +36,8 @@ function NavHeader() {
     setAnchorElUser(null);
   };
 
-  const { handleClick } = useAutenticacion();
+  const { handleClick } = useAutenticacion();  
+
 
   return (
     <AppBar position="static" color="default">
@@ -144,7 +146,6 @@ function NavHeader() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              <MenuItem onClick={handleCloseUserMenu}>Inicio</MenuItem>
               <MenuItem onClick={handleClick}>Login</MenuItem>
             </Menu>
           </Box>

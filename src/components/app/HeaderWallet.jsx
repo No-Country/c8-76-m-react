@@ -9,8 +9,11 @@ import Grid from "@mui/material/Grid";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
-import s from "../../styles/NavsWallet.module.css"
-
+import s from "../../styles/NavsWallet.module.css";
+import { getAuth, signOut } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
+import { DataContext, initialState } from "../../context/DataContext";
+import { useContext } from "react";
 
 
 export default function HeaderWallet() {
@@ -23,6 +26,20 @@ export default function HeaderWallet() {
     const handleCloseUserMenu = () => {
       setAnchorElUser(null);
     };
+
+    const navigate = useNavigate();
+    const { setUser } = useContext(DataContext);
+
+    const handleSignOut = () =>{
+    const auth = getAuth();
+    signOut(auth).then(() => {
+      navigate("/")
+      setUser(initialState);
+      console.log("cerró sesion");
+    }).catch((error) => {
+      console.log(error)
+    })
+  };
 
   return ( 
   <div className={s.navtop}>
@@ -61,7 +78,7 @@ export default function HeaderWallet() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              <MenuItem onClick={handleCloseUserMenu}>Cerrar Sesion</MenuItem>
+              <MenuItem onClick={handleSignOut}>Cerrar Sesion</MenuItem>
             </Menu>
           </Box>      
           </Grid>         
