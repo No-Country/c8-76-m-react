@@ -1,0 +1,27 @@
+.principal{
+ 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.secundario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.iconos{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.iconos img{
+    width: 100px;
+    margin: 25px 100px 25px 100px;
+    
+}
