@@ -19,9 +19,35 @@
     align-items: center;
 
 }
+.aysa{
+
+    padding: 15px;
+}
 
 .iconos img{
     width: 100px;
-    margin: 25px 100px 25px 100px;
+    /*margin: 25px 100px 25px 100px;    */
+    margin: 25px;
+}
+
+
+
+/*  ******************************************************************* */
+
+
+@media only screen and (max-width:400px) {
     
+    .secundario{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .principal h3{
+        font-size: 19px;
+    }
+
+    .iconos img{
+        width: 85px;
+        margin: 15px;
+    }
 }
