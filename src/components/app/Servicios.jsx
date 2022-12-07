@@ -40,22 +40,7 @@ export default function Servicios() {
       </div>
     </div>
 
-    {/* <Box sx={{ flexGrow: 1}}>   
-      <Grid container justifyContent="center"  rowSpacing={1} columnSpacing={{ xs: 1, md: 12 }}>
-        <Grid item xs={2} md={3}>
-          <Item>1</Item>
-        </Grid>
-        <Grid item xs={2} md={3}>
-          <Item>2</Item>
-        </Grid>
-        <Grid item xs={2} md={3}>
-          <Item>3</Item>
-        </Grid>
-        <Grid item xs={2} md={3}>
-          <Item>4</Item>
-        </Grid>
-      </Grid>
-    </Box> */}
+  
 </div>
   );
 }
