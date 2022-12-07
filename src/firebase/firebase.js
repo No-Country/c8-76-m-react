@@ -39,6 +39,32 @@ export const db = getFirestore(app);
 const storage = getStorage(app);
 
 //Funciones de DB
+
+export const searchUserById = async (id) => {
+  const usersRef = collection(db, "users");
+  const q = query(usersRef, where("id", "==", id));
+  const querySnapshot = await getDocs(q);
+  const infoUser = querySnapshot.docs.map((doc) => doc.data());
+
+  return infoUser;
+};
+
+export const getInfoUser = async () => {
+  const querySnapshot = await getDocs(collection(db, "users"));
+  const infoUser = querySnapshot.docs.map((doc) => doc.data());
+  return infoUser;
+};
+
 export const saveUser = async (user) => {
-  return await addDoc(collection(db, "users"), user);
+  await addDoc(collection(db, "users"), user);
+};
+
+export const validateUserExists = async (user) => {
+  const usersInDb = await getInfoUser();
+  if (!usersInDb.find((users) => users.id === user.id)) {
+    saveUser(user);
+    console.log("user registrado!");
+  } else {
+    console.log("Ya el usuario esta registrado");
+  }
 };

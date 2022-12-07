@@ -3,7 +3,7 @@ import {
   signInWithPopup,
   onAuthStateChanged,
 } from "firebase/auth";
-import { auth, saveUser } from "../firebase/firebase";
+import { auth, validateUserExists } from "../firebase/firebase";
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { DataContext } from "../context/DataContext";
@@ -18,7 +18,7 @@ export const useAutenticacion = () => {
     const signInWithGoogle = async (googleProvider) => {
       try {
         const res = await signInWithPopup(auth, googleProvider);
-        console.log(res);
+
         setUser({
           id: res.user.uid,
           name: res.user.displayName,
@@ -27,7 +27,7 @@ export const useAutenticacion = () => {
           email: res.user.email,
           movimientos: [],
         });
-        saveUser({
+        validateUserExists({
           id: res.user.uid,
           name: res.user.displayName,
           saldo: 1000,
