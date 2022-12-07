@@ -1,0 +1,28 @@
+
+
+.contenedorPrincipal{
+    /* margin-top: 17%; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.contenedorSecundario{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+input{
+    border-radius: 6px;
+    border: solid 0.5 px #1A1D58;
+}
+
+button{
+    background-color: #1A1D58;
+    border-radius: 6px;
+    color: white;
+}
