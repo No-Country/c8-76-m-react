@@ -51,13 +51,6 @@ export default function Servicios() {
 const [values, setValues] = useState("");
 const [servicio, setServicio] = useState("");
 
-const handleSubmit = (e) => {
-
-}
-
-const handleInputChange = (e) => {
- 
-};
 
 const handleClick = (e) => {
   setServicio(e.currentTarget.alt);
