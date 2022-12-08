@@ -1,28 +1,27 @@
-
-
-.contenedorPrincipal{
-    /* margin-top: 17%; */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
+.contenedorPrincipal {
+  /* margin-top: 17%; */
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
-.contenedorSecundario{
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
+/* .contenedorSecundario {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+} */
+
+input {
+  border-radius: 6px;
+  border: solid 0.5 px #1a1d58;
 }
 
-input{
-    border-radius: 6px;
-    border: solid 0.5 px #1A1D58;
-}
-
-button{
-    background-color: #1A1D58;
-    border-radius: 6px;
-    color: white;
+.button {
+  width: 100%;
+  background-color: #1a1d58;
+  border-radius: 6px;
+  color: white;
 }
