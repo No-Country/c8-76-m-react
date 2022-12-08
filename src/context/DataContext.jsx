@@ -18,6 +18,7 @@ export const DataProvider = ({ children }) => {
     onAuthStateChanged(auth, async (user) => {
       if (user) {
         const currentUser = await searchUserById(user.uid);
+
         setUser(currentUser[0]);
       } else {
         console.log("no hay nadie autenticado");

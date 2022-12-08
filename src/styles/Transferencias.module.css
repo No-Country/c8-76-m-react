@@ -1,5 +1,4 @@
 .contenedorPrincipal {
-  /* margin-top: 17%; */
   display: flex;
   gap: 2rem;
   justify-content: center;
@@ -7,12 +6,6 @@
   flex-direction: column;
   height: 100vh;
 }
-
-/* .contenedorSecundario {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-} */
 
 input {
   border-radius: 6px;

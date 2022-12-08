@@ -13,7 +13,7 @@ const Transferencias = () => {
 
   const movimientosActuales = user.movimientos;
 
-  const handleClick = () => {
+  const handleClick = (e) => {
     const aux = {
       ...user,
       saldo: user.saldo - values.monto,
@@ -26,13 +26,16 @@ const Transferencias = () => {
 
     setUser(aux);
 
-    updateUser(user.id, aux);
+    updateUser(aux);
+
+    e.currentTarget.reset();
 
     console.log("entro");
   };
 
   return (
-    <div className={styles.contenedorPrincipal}>
+    <form onSubmit={handleClick} className={styles.contenedorPrincipal}>
+      <h2>Transferencias</h2>
       <TextField
         name="nombre"
         onChange={handleInputChange}
@@ -58,10 +61,8 @@ const Transferencias = () => {
         label="concepto"
         variant="outlined"
       />
-      <button onClick={handleClick} className={styles.button}>
-        Enviar
-      </button>
-    </div>
+      <button className={styles.button}>Enviar</button>
+    </form>
   );
   /* los valores del input en un estado
       setUser({...user, movimientos[...user.movimientos, {

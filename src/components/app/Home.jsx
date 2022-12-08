@@ -22,7 +22,7 @@ function Home() {
             <p>$100</p>
           </article> */}
           {user.movimientos.map((movimiento) => (
-            <article className={s.article} key={crypto.randomUUID}>
+            <article className={s.article} key={crypto.randomUUID()}>
               <p>{movimiento.nombre}</p>
               <div>
                 <p>{movimiento.concepto}</p>
