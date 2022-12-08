@@ -79,7 +79,7 @@ export default function Servicios() {
 
     updateUser(aux);
 
-    /* e.currentTarget.reset(); */
+    e.currentTarget.reset(); 
     setValues("");
 
     console.log(typeof values);
@@ -94,10 +94,9 @@ export default function Servicios() {
   };
 
   return (
-    <form className={styles.contenedorPrincipal} data-aos="fade-up" data-aos-delay="400">
-      
+    <form className={styles.contenedorPrincipal} data-aos="fade-up" data-aos-delay="400">      
       <Box sx={{ flexGrow: 1 }}>  
-      <h2 className="text-center py-3">Servicios</h2>    
+      <h2 className= "text-center py-3">Servicios</h2>    
         <Typography
           variant="h6"
           sx={{
