@@ -95,8 +95,9 @@ export default function Servicios() {
 
   return (
     <form className={styles.contenedorPrincipal} data-aos="fade-up" data-aos-delay="400">
-      <h2>Servicios</h2>
-      <Box sx={{ flexGrow: 1 }}>
+      
+      <Box sx={{ flexGrow: 1 }}>  
+      <h2 className="text-center py-3">Servicios</h2>    
         <Typography
           variant="h6"
           sx={{
@@ -138,7 +139,6 @@ export default function Servicios() {
             p: 2,
             fontWeight: 700,
             letterSpacing: ".1rem",
-            textAlign: "center",
             textDecoration: "none",
             textAlign: "center",
           }}
@@ -168,7 +168,7 @@ export default function Servicios() {
             </Grid>
           ))}
         </Grid>
-        <Grid container justifyContent="center" className="py-3" height={255}>
+        <Grid container justifyContent="center" className="py-3" height={280}>
           <FormControl fullWidth onSubmit={handleSubmit}>
             <StepLabel className="py-3">
               <h5>Servicio: {servicio}</h5>{" "}
