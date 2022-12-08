@@ -28,7 +28,7 @@ const Transferencias = () => {
     setUser(aux);
 
     updateUser(aux);
-    console.log("entro");
+    console.log("entrooo");
     e.currentTarget.reset();
   };
 
