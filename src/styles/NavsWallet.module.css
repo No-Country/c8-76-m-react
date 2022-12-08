@@ -5,6 +5,7 @@
     width: 100%;
     text-align: center;
     border: 1px solid #1A1D58;
+    background-color: lavender;
 }
  .item:hover{    
     transform: scale(1.5);

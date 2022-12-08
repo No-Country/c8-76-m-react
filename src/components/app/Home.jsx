@@ -9,9 +9,7 @@ function Home() {
     <>
       <div className={s.textCenter}>
         <section>
-
-          <h2>Saldo:{user.saldo}</h2>
-
+          <h2 className="text-center py-3">Saldo:{user.saldo}</h2>
         </section>
         <section>
           <h3>Movimientos</h3>
