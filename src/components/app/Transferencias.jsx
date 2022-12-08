@@ -24,6 +24,7 @@ const Transferencias = () => {
       ],
     };
 
+
     setUser(aux);
 
     updateUser(aux);
@@ -34,7 +35,7 @@ const Transferencias = () => {
   };
 
   return (
-    <form onSubmit={handleClick} className={styles.contenedorPrincipal}>
+    <form onSubmit={handleClick} className={styles.contenedorPrincipal} data-aos="fade-up" data-aos-delay="400">
       <h2>Transferencias</h2>
       <TextField
         name="nombre"
@@ -71,6 +72,7 @@ const Transferencias = () => {
       </Button>
     </form>
   );
+
 };
 
 export default Transferencias;
