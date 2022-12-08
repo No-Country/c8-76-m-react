@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "deploy": "yarn run && firebase deploy",
     "preview": "vite preview"
   },
   "dependencies": {

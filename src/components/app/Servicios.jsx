@@ -47,8 +47,6 @@ const itemServicios = [
   },
 ];
 
-
-
 export default function Servicios() {
 const [values, setValues] = useState("");
 const [servicio, setServicio] = useState("");
@@ -67,6 +65,7 @@ const handleClick = (e) => {
 
 
   return (
+
     <div>
      <h2 className="text-center py-3">Servicios</h2>
       <Box sx={{ flexGrow: 1 }}>
