@@ -65,6 +65,28 @@ const handleClick = (e) => {
 
 
   return (
+  <div className={styles.principal} data-aos="fade-up" data-aos-delay="400">
+    <h3>Servicios</h3>
+    <div className={styles.secundario}>
+      
+      <br />
+      <h3>Recarga de celulares:</h3>
+      <div className={styles.iconos}>
+        
+        <img src={logo1} alt="" />
+        <img src={logo1} alt="" />
+        <img src={logo1} alt="" />
+        <img src={logo1} alt="" />
+      </div>
+
+      <h3>Pagar servicios:</h3>
+      <div className={styles.iconos}>
+        <img src={logo1} alt="" />
+        <img src={logo1} alt="" />
+        <img src={logo1} alt="" />
+        <img src={logo1} alt="" />
+      </div>
+    </div>
 
     <div>
      <h2 className="text-center py-3">Servicios</h2>
