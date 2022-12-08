@@ -78,7 +78,7 @@ export default function Servicios() {
 
     updateUser(aux);
 
-    /* e.currentTarget.reset(); */
+ /*    e.currentTarget.reset();  */
     setValues("");
 
     console.log(typeof values);
@@ -139,8 +139,8 @@ export default function Servicios() {
             p: 2,
             fontWeight: 700,
             letterSpacing: ".1rem",
-            textAlign: "center",
             textDecoration: "none",
+            textAlign: "center",
           }}
         >
           Pagar Servicios
