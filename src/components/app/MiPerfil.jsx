@@ -5,7 +5,7 @@ function MiPerfil() {
   const { user } = useContext(DataContext);
   console.log(user);
   return (
-    <div className="container text-center">
+    <div className="container text-center" data-aos="fade-up" data-aos-delay="400">
       <h2 className="py-3">Mi perfil</h2>
 
       <img
