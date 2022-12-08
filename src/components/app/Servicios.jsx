@@ -81,7 +81,7 @@ const handleClick = (e) => {
         </Typography>
         <Grid  container justifyContent="center" rowSpacing={1} columnSpacing={{ xs: 1, md: 12 }}>
           {itemCelular.map((item) => (
-            <Grid item xs={4.5} md={3} key={item.img}>
+            <Grid item xs={4.5} sm={2} md={3} key={item.img}>
               <ImageListItem>    
                 <img
                   className="img-header img-fluid m-2 img-servicios"
@@ -108,7 +108,7 @@ const handleClick = (e) => {
         </Typography>
         <Grid container justifyContent="center" rowSpacing={1} columnSpacing={{ xs: 1, md: 12 }}>
           {itemServicios.map((item) => (
-            <Grid item xs={4.5} md={3} key={item.img}>
+            <Grid item xs={4.5} sm={2} md={3} key={item.img}>
               <ImageListItem>
                 <img
                   className="img-header img-fluid m-2 img-servicios"
