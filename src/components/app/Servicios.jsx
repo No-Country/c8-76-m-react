@@ -76,7 +76,6 @@ export default function Servicios() {
 
     setUser(aux);
 
-
     updateUser(aux);
 
     /* e.currentTarget.reset(); */
@@ -94,7 +93,11 @@ export default function Servicios() {
   };
 
   return (
-    <form className={styles.contenedorPrincipal} data-aos="fade-up" data-aos-delay="400">
+    <form
+      className={styles.contenedorPrincipal}
+      data-aos="fade-up"
+      data-aos-delay="400"
+    >
       <h2>Servicios</h2>
       <Box sx={{ flexGrow: 1 }}>
         <Typography
@@ -116,10 +119,8 @@ export default function Servicios() {
           columnSpacing={{ xs: 1, md: 12 }}
         >
           {itemCelular.map((item) => (
-
             <Grid item xs={4.5} md={3} key={crypto.randomUUID()}>
               <ImageListItem>
-
                 <img
                   className="img-header img-fluid m-2 img-servicios"
                   src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
@@ -151,9 +152,7 @@ export default function Servicios() {
           columnSpacing={{ xs: 1, md: 12 }}
         >
           {itemServicios.map((item) => (
-
             <Grid item xs={4.5} md={3} key={crypto.randomUUID()}>
-
               <ImageListItem>
                 <img
                   className="img-header img-fluid m-2 img-servicios"
