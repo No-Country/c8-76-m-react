@@ -3,7 +3,7 @@ import styles from "../../styles/Transferencias.module.css";
 
 
 const Transferencias = () => {
-  return <div className={styles.contenedorPrincipal}>
+  return <div className={styles.contenedorPrincipal} data-aos="fade-up" >
 
     <div className={styles.contenedorSecundario} >
 

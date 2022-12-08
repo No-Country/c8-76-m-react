@@ -17,7 +17,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function Servicios() {
   return (
-  <div className={styles.principal}>
+  <div className={styles.principal} data-aos="fade-up" data-aos-delay="400">
     <h3>Servicios</h3>
     <div className={styles.secundario}>
       

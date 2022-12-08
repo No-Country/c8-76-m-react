@@ -21,7 +21,7 @@ export default function SectionPrincipal() {
       }}
     >
       <Card sx={{ maxWidth: 345, border: 1 }}>
-        <CardActionArea>
+        <CardActionArea data-aos="fade-up">
           <CardMedia
             component="img"
             height="140"
@@ -39,7 +39,7 @@ export default function SectionPrincipal() {
         </CardActionArea>
       </Card>
       <Card sx={{ maxWidth: 345, border: 1 }}>
-        <CardActionArea>
+        <CardActionArea data-aos="fade-up">
           <CardMedia
             component="img"
             height="140"
@@ -58,7 +58,7 @@ export default function SectionPrincipal() {
         </CardActionArea>
       </Card>
       <Card sx={{ maxWidth: 345, border: 1 }}>
-        <CardActionArea>
+        <CardActionArea data-aos="fade-up">
           <CardMedia component="img" height="140" image={tarjetas} alt="card" />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">

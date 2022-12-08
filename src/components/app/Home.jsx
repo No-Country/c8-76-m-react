@@ -7,7 +7,7 @@ function Home() {
 
   return (
     <>
-      <div className={s.textCenter}>
+      <div className={s.textCenter} data-aos="fade-up" data-aos-delay="400">
         <section>
 
           <h2>Saldo:{user.saldo}</h2>
