@@ -1,4 +1,4 @@
-import { TextField } from "@mui/material";
+import { Button, TextField } from "@mui/material";
 import React from "react";
 import { useContext } from "react";
 import { DataContext } from "../../context/DataContext";
@@ -61,28 +61,16 @@ const Transferencias = () => {
         label="concepto"
         variant="outlined"
       />
-      <button className={styles.button}>Enviar</button>
+      <Button
+        variant="outlined"
+        className="btn w-100 my-3"
+        sx={{ background: "#1A1D58", color: "white" }}
+        onClick={handleSubmit}
+      >
+        Enviar
+      </Button>
     </form>
   );
-  /* los valores del input en un estado
-      setUser({...user, movimientos[...user.movimientos, {
-        nombre: input.value,
-        descripcion: input.value,
-        fecha: input.value,
-        monto: input.value
-      }]})
-
-      saveUser({...user, movimientos[...user.movimientos, {
-        nombre: input.value,
-        descripcion: input.value,
-        fecha: input.value,
-        monto: input.value
-      }]})
-
-
-  
-  
-  */
 };
 
 export default Transferencias;

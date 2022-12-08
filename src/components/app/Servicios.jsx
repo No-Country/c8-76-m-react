@@ -103,6 +103,7 @@ export default function Servicios() {
             fontWeight: 700,
             letterSpacing: ".1rem",
             textDecoration: "none",
+            textAlign: "center",
           }}
         >
           Recarga de Celulares
@@ -134,6 +135,7 @@ export default function Servicios() {
             p: 2,
             fontWeight: 700,
             letterSpacing: ".1rem",
+            textAlign: "center",
             textDecoration: "none",
           }}
         >
