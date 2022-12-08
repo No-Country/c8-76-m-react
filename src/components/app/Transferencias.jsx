@@ -1,4 +1,4 @@
-import { TextField } from "@mui/material";
+import { Button, TextField } from "@mui/material";
 import React from "react";
 import { useContext } from "react";
 import { DataContext } from "../../context/DataContext";
@@ -13,7 +13,7 @@ const Transferencias = () => {
 
   const movimientosActuales = user.movimientos;
 
-  const handleClick = () => {
+  const handleClick = (e) => {
     const aux = {
       ...user,
       saldo: user.saldo - values.monto,
@@ -27,13 +27,16 @@ const Transferencias = () => {
 
     setUser(aux);
 
-    updateUser(user.id, aux);
+    updateUser(aux);
+
+    e.currentTarget.reset();
 
     console.log("entro");
   };
 
   return (
-    <div className={styles.contenedorPrincipal} data-aos="fade-up" data-aos-delay="400">
+    <form onSubmit={handleClick} className={styles.contenedorPrincipal} data-aos="fade-up" data-aos-delay="400">
+      <h2>Transferencias</h2>
       <TextField
         name="nombre"
         onChange={handleInputChange}
@@ -59,10 +62,15 @@ const Transferencias = () => {
         label="concepto"
         variant="outlined"
       />
-      <button onClick={handleClick} className={styles.button}>
+      <Button
+        variant="outlined"
+        className="btn w-100 my-3"
+        sx={{ background: "#1A1D58", color: "white" }}
+        onClick={handleSubmit}
+      >
         Enviar
-      </button>
-    </div>
+      </Button>
+    </form>
   );
 
 };

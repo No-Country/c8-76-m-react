@@ -18,7 +18,7 @@ export const useAutenticacion = () => {
     const signInWithGoogle = async (googleProvider) => {
       try {
         const res = await signInWithPopup(auth, googleProvider);
-
+        console.log(res);
         setUser({
           id: res.user.uid,
           name: res.user.displayName,

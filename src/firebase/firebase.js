@@ -58,13 +58,23 @@ export const getInfoUser = async () => {
 };
 
 //UPDATE
-export const updateUser = async (id, obj) => {
-  const userRef = collection(db, "user");
-  await updateDoc(doc(userRef, id), obj);
+export const updateUser = async (user) => {
+  /* const userRef = collection(db, "user");
+  await updateDoc(doc(userRef, id), obj); */
+  try {
+    const collectionRef = collection(db, "users");
+    const docRef = doc(collectionRef, user.id);
+    await setDoc(docRef, user);
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 export const saveUser = async (user) => {
-  await addDoc(collection(db, "users"), user);
+  /* await setDoc(collection(db, "users"), user); */
+  const collectionRef = collection(db, "users");
+  const docRef = doc(collectionRef, user.id);
+  await setDoc(docRef, user);
 };
 
 export const validateUserExists = async (user) => {
