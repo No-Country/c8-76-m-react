@@ -7,23 +7,6 @@ import useForm from "../../hooks/useForm";
 import styles from "../../styles/Transferencias.module.css";
 
 const Transferencias = () => {
-  return <div className={styles.contenedorPrincipal} data-aos="fade-up" >
-
-    <div className={styles.contenedorSecundario} >
-
-    <h3>Transferencias</h3>
-    <br />
-    <h6>Ingrese el CBU o Alias:</h6>
-    <input type="text" />
-    <br />
-    <h6>Monto:</h6>
-    <input type="text" />
-    <br />
-    <h6>Concepto:</h6>
-    <input type="text" name="" id="" />
-    <br />
-    <button>Enviar</button>
-    
   const { values, handleInputChange } = useForm();
 
   const { user, setUser } = useContext(DataContext);
@@ -50,7 +33,7 @@ const Transferencias = () => {
   };
 
   return (
-    <div className={styles.contenedorPrincipal}>
+    <div className={styles.contenedorPrincipal} data-aos="fade-up" data-aos-delay="400">
       <TextField
         name="nombre"
         onChange={handleInputChange}
@@ -81,25 +64,7 @@ const Transferencias = () => {
       </button>
     </div>
   );
-  /* los valores del input en un estado
-      setUser({...user, movimientos[...user.movimientos, {
-        nombre: input.value,
-        descripcion: input.value,
-        fecha: input.value,
-        monto: input.value
-      }]})
 
-      saveUser({...user, movimientos[...user.movimientos, {
-        nombre: input.value,
-        descripcion: input.value,
-        fecha: input.value,
-        monto: input.value
-      }]})
-
-
-  
-  
-  */
 };
 
 export default Transferencias;
