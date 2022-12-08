@@ -75,6 +75,7 @@ const handleClick = (e) => {
             fontWeight: 700,
             letterSpacing: ".1rem",
             textDecoration: "none",
+            textAlign: "center",
           }}
         >
           Recarga de Celulares
@@ -102,6 +103,7 @@ const handleClick = (e) => {
             fontWeight: 700,
             letterSpacing: ".1rem",
             textDecoration: "none",
+            textAlign: "center",
           }}
         >
           Pagar Servicios
@@ -122,7 +124,7 @@ const handleClick = (e) => {
             </Grid>
           ))}
         </Grid>
-        <Grid container justifyContent="center" className="py-3" height={280}>
+        <Grid container justifyContent="center" className="py-3" height={255}>
           <FormControl fullWidth onSubmit={handleSubmit}>
             <StepLabel className='py-3'><h5>Servicio: {servicio}</h5> </StepLabel>    
             <TextField label="Monto" type="number" onChange={handleInputChange}/>
