@@ -78,7 +78,7 @@ export default function Servicios() {
 
     updateUser(aux);
 
-    e.currentTarget.reset(); 
+ /*    e.currentTarget.reset();  */
     setValues("");
 
     console.log(typeof values);
