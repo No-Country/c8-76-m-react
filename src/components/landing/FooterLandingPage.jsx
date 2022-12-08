@@ -11,7 +11,7 @@ import { Grid, Box } from "@mui/material";
 export const FooterLandingPage = () => {
   return (
     <footer className={style.general}>
-      <Box className={style.container}>
+      <Box className={style.container} data-aos="fade-up">
         <Accordion>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}

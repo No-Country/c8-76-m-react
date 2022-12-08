@@ -7,20 +7,30 @@ function Home() {
 
   return (
     <>
-      <div className={s.textCenter}>
+      <div className={s.textCenter} data-aos="fade-up" data-aos-delay="400">
         <section>
-          <h2 className="text-center py-3">Saldo:{user.saldo}</h2>
+          <h2>Saldo:{user.saldo}</h2>
         </section>
         <section>
           <h3>Movimientos</h3>
-          <article className={s.article}>
+          {/* <article className={s.article}>
             <p>Edesur</p>
             <div>
               <p>Pago de Edesur</p>
               <p>30/11/2022</p>
             </div>
             <p>$100</p>
-          </article>
+          </article> */}
+          {user.movimientos.map((movimiento) => (
+            <article className={s.article} key={crypto.randomUUID}>
+              <p>{movimiento.nombre}</p>
+              <div>
+                <p>{movimiento.concepto}</p>
+                <p>{movimiento.fecha}</p>
+              </div>
+              <p>${movimiento.monto}</p>
+            </article>
+          ))}
         </section>
       </div>
     </>

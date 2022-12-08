@@ -12,6 +12,7 @@ import {
   where,
   setDoc,
   deleteDoc,
+  updateDoc,
 } from "firebase/firestore";
 import {
   getStorage,
@@ -52,7 +53,14 @@ export const searchUserById = async (id) => {
 export const getInfoUser = async () => {
   const querySnapshot = await getDocs(collection(db, "users"));
   const infoUser = querySnapshot.docs.map((doc) => doc.data());
+  /* console.log(referencia); */
   return infoUser;
+};
+
+//UPDATE
+export const updateUser = async (id, obj) => {
+  const userRef = collection(db, "user");
+  await updateDoc(doc(userRef, id), obj);
 };
 
 export const saveUser = async (user) => {
